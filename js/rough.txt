@@ -1,0 +1,11 @@
+15 year back => client is poor
+
+js
+let a;
+a = 'x';
+a = a+10;
+
+c++
+int a;
+a = 'x';
+a = a+10;
