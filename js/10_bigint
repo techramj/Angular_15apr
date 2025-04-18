@@ -1,0 +1,19 @@
+let a = "123456789123456789";
+let b = "12341234";
+console.log(a+b);
+
+let x = 123456789123456789;
+let y = 12341234;
+console.log(x+y); 
+
+let bigInt = BigInt("2");
+let bigInt1 = 123456789123456789n;
+console.log(bigInt1);
+console.log(bigInt );
+let z = bigInt + bigInt1;
+console.log(z);
+
+let s1 = Symbol(10);
+let s2 = Symbol(10);
+
+console.log(s1==s2);
