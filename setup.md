@@ -13,3 +13,31 @@ https://code.visualstudio.com/
 ```
 npm install -g typescript
 ```
+
+# angular installation
+```
+npm install -g @angular/cli
+```
+
+To verify 
+```
+ng version
+```
+
+First application
+```
+ng new <project_name>
+
+Which stylesheet format would you like to use? CSS   
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? N
+```
+
+start the project
+```
+cd <project_name>
+ng serve
+or
+npm start
+```
+
+## project structure
