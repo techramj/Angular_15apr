@@ -9,3 +9,14 @@ c++
 int a;
 a = 'x';
 a = a+10;
+
+
+
+angular.js  1
+angular 2
+
+
+angular 8
+
+angular 14  -standalone feature
+angular 15  by default standalone

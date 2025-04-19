@@ -25,3 +25,4 @@ let arr2:number[] =  [1,2,3];
 let arr3:Array<number> = [1,2,3];
 let arr4:Array<string | number> = [1,2,3,'4','5'];
 ```
+
