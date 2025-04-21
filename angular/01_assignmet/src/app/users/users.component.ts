@@ -9,5 +9,5 @@ import { UserComponent } from "./user/user.component";
   styleUrl: './users.component.css'
 })
 export class UsersComponent {
-   @Input({required: true, alias:'seedUser'}) users!:{name:string, age?:number, nationality?:string}[];
+   @Input({required: true,  alias:'seedUser'}) users!:{name:string, age?:number, nationality?:string}[];
 }
