@@ -41,3 +41,17 @@ npm start
 ```
 
 ## project structure
+
+
+## istall bootstrap
+```
+npm install --save bootstrap
+
+add the path in angular.json
+./node_modules/bootstrap/dist
+
+
+./node_modules/bootstrap/dist/css/bootstrap.min.css
+
+./node_modules/bootstrap/dist/js/bootstrap.min.js
+```

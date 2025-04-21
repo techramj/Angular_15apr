@@ -26,5 +26,4 @@ app.component ---- uesrs----> Users.component ---> user.component
 
    ng g c users --skip-tests
    ng g c users/user --skip-tests
-
 ```
