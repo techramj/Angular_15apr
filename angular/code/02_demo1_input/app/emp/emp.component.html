@@ -1,0 +1,14 @@
+<div class="card" style="width: 25rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{selectedEmp.name}}'s Details</h5>
+      <p class="card-text">
+        Id: {{selectedEmp.id}}<br>
+        Name: {{selectedEmp.name}}<br>
+        Gender: {{selectedEmp.gender}}<br>
+        Email: {{selectedEmp.email}}<br>
+        Salary: {{selectedEmp.salary}}<br>
+      </p>
+
+      <button class="btn btn-primary" (click)="displayEmpDetails()">Display Another Employee's Details</button>
+    </div>
+  </div>

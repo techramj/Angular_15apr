@@ -1,0 +1,30 @@
+<div class="card" style="width: 25rem;">
+    <div class="card-body">
+      @if(selectedEmp.name){
+        <h5 class="card-title">{{selectedEmp.name}}'s Details</h5>
+      }
+      @else{
+        <h5 class="card-title">Employee's Details</h5>
+      }
+      
+      <p class="card-text"> Id: {{selectedEmp.id}}</p>
+      @if (selectedEmp.name) {
+        <p class="card-text"> Name: {{selectedEmp.name}}</p>
+      }
+      
+      @if(selectedEmp.gender){
+        <p class="card-text"> Gender: {{selectedEmp.gender}}</p>
+      }
+     
+      @if(selectedEmp.email){
+        <p class="card-text"> Email: {{selectedEmp.email}}</p>
+      }
+
+      @if(selectedEmp.salary){
+        <p class="card-text"> Salary: {{selectedEmp.salary}}</p>
+      }
+      
+  
+      <button class="btn btn-primary" (click)="displayEmpDetails()">Display Another Employee's Details</button>
+    </div>
+  </div>
