@@ -27,3 +27,35 @@ app.component ---- uesrs----> Users.component ---> user.component
    ng g c users --skip-tests
    ng g c users/user --skip-tests
 ```
+
+
+# 02
+```
+create component 
+1. BannerButton
+2. Banner
+3. Button
+
+call BannerButton component in app.component
+
+BannerButton
+<app-banner />
+<app-button />
+
+
+Button
+ Button click: {{count}} time(s).
+ button. on click, increment the count. display the counter value in Button component
+
+
+ Banner
+   display the below message based on coditon.
+   if count= 10 then
+      you are eligible for silver button 
+   if count = 20 
+      you are eligible for golden button 
+   
+   if count >30
+      you are eligible for platinum button
+
+```

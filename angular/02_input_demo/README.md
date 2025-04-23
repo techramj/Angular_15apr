@@ -25,3 +25,18 @@ ng g c emp --skip-tests
 
 # 3. create dummy_employees file
 
+
+
+
+
+# 10. communicate between parent and chile
+```
+ng g c parent --skip-tests
+ng g c child --skip-tests
+
+call the component child in parent
+```
+
+
+
+

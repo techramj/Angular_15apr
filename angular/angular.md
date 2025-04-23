@@ -1,5 +1,23 @@
 # Angular
+Important cli command
+1. create new project
+```
+ng new <project_name>
+```
 
+2. start the project
+```
+ng serve
+//or
+npm start
+```
+
+3. create new component
+```
+ng generate component <component-name>
+ng g c <component-name>
+ng g c <component-name> --skip-tests  
+```
 
 # Component
 
@@ -56,7 +74,7 @@ export Class UserComponent{
 ```
 
 
-### 3 Property selector
+### 3 class selector
 ```
 @Component({
     selector: '.app-user',

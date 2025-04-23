@@ -1,0 +1,8 @@
+<div class="card" style="width: 40rem;">
+    <div class="card-body">
+        <h3>Parent component</h3>
+        <p>Message from child:  {{message}}</p>
+        <p>count: {{count}}</p>
+        <app-child [cnt]="count"   (message)="displayMessage($event)"></app-child>
+    </div>
+</div>

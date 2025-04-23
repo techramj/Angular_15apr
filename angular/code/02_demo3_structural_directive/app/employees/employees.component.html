@@ -1,0 +1,34 @@
+<!--<div class="card" style="width: 40rem;">
+    <div class="card-body">
+      <h5 class="card-title">Employees Infromation</h5>
+      <p>Total Employee: {{employees.length}}</p>
+      <app-emp [selectedEmp]="employees[0]" ></app-emp>
+      <app-emp [selectedEmp]="employees[1]"></app-emp>
+      <app-emp [selectedEmp]="employees[2]"></app-emp>
+      <app-emp [selectedEmp]="employees[3]"></app-emp>
+    </div>
+  </div>
+-->
+
+<!--
+<div class="card" style="width: 40rem;">
+  <div class="card-body">
+    <h5 class="card-title">Employees Infromation</h5>
+    <p>Total Employee: {{employees.length}}</p>
+   @for(emp of employees; track emp.id){
+    <app-emp [selectedEmp]="emp"></app-emp>
+   }
+  </div>
+</div>
+-->
+
+
+<div class="card" style="width: 40rem;">
+  <div class="card-body">
+    <h5 class="card-title">Employees Infromation</h5>
+    <p>Total Employee: {{employees.length}}</p>
+    <div *ngFor="let emp of employees">
+      <app-emp [selectedEmp]="emp"></app-emp>
+    </div>
+  </div>
+</div>
