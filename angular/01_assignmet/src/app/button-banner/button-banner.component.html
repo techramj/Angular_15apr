@@ -1,0 +1,8 @@
+<div class="card" style="width: 40rem;">
+    <div class="card-body">
+        <h3>ButtonBanner Component</h3>
+        <p>cnt: {{cnt}}</p>
+        <app-banner [count]="cnt"  />
+        <app-button  (counter)="onButtonClicked($event)" />
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="card" style="width: 20rem;">
+    <div class="card-body">
+        <h3>Banner Component</h3>
+        <p>count: {{count}}</p>
+        <p *ngIf="count === 0">{{message.replace('silver', 'no')}}</p>
+        @if(count=== 10){
+            <p>{{message}}</p>
+        }
+        
+        @if(count=== 20){
+            <p>{{message.replace('silver','golden')}}</p>
+        }
+
+        @if(count=== 30){
+            <p>{{message.replace('silver','platinum')}}</p>
+        }
+       
+    </div>
+</div>

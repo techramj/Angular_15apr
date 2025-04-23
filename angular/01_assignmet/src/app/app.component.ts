@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { SelectorComponent } from './selector/selector.component';
 import { UsersComponent } from "./users/users.component";
+import { ButtonBannerComponent } from "./button-banner/button-banner.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, SelectorComponent, UsersComponent],
+  imports: [HeaderComponent, SelectorComponent, UsersComponent, ButtonBannerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
