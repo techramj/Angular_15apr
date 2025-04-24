@@ -1,0 +1,43 @@
+
+<div class="container">
+    <h2 [ngClass]="{'A': titleClassFlag, 'B':true}" 
+    [ngStyle]="{'text-align': titleTextPosition}">
+    {{title}}</h2>
+    <h5 [ngClass]="['A']" >
+    {{title}}</h5>
+</div>
+
+<div class="card" style="width: 40rem;">
+    <div class="card-body">
+        <button class="btn btn-primary" (click)="setPosition('left')">Left</button>
+        <button class="btn btn-primary" (click)="setPosition('center')">Center</button>
+        <button class="btn btn-primary" (click)="setPosition('right')">Right</button>
+     </div>  
+</div>
+
+<input type="checkbox" [(ngModel)]="show"> show/hide the color {{show}}
+
+@if(show){
+    <h3>Favourite color</h3>
+    <ul>
+        @for(c of colors;track c){
+            <li [ngStyle]="{'color':c}">{{c}}</li>
+        }
+    </ul>
+}
+
+<div>
+    <h3>Select Day</h3>
+    <input type="number" [min]="min" [max]="max" [(ngModel)] ='day' />  {{day}}
+</div>
+
+<div [ngSwitch]="day">
+    <p *ngSwitchCase="1">Monday</p>
+    <p *ngSwitchCase="2">Tuesday</p>
+    <p *ngSwitchCase="3">Wednesday</p>
+    <p *ngSwitchCase="4">Thursday</p>
+    <p *ngSwitchCase="5">Friday</p>
+    <p *ngSwitchCase="6">Saturday</p>
+    <p *ngSwitchCase="7">Sunday</p>
+    <p *ngSwitchDefault>Invalid day</p>
+</div>

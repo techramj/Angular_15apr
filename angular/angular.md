@@ -85,3 +85,28 @@ export Class UserComponent{
 export Class UserComponent{
 
 }
+```
+
+## Binding
+
+```
+    html  <------------------------------- ts
+            {{string interpolation}} [propertyBinding]
+
+    html  -------------------------------> ts
+           (event) ="function(){}"
+
+    html  <-------------------------------> ts
+                [(ngModel)]
+```
+
+
+## applying css
+```
+[ngClass]="{'className1': true, 'className2':true}"
+[ngClass] ='[...list of classes]'
+
+[ngStyle] ="{key:value}"
+key = cssProperties(eg: background-color, text-align)
+value= cssProperties value(eg; 'red','center')
+```
