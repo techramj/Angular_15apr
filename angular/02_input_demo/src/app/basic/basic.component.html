@@ -1,4 +1,4 @@
-
+<h5>Time : {{time | async}}</h5>
 <div class="container">
     <h2 [ngClass]="{'A': titleClassFlag, 'B':true}" 
     [ngStyle]="{'text-align': titleTextPosition}">
@@ -14,6 +14,10 @@
         <button class="btn btn-primary" (click)="setPosition('right')">Right</button>
      </div>  
 </div>
+<hr>
+<input type="number" min="10" max="100" [(ngModel)]="textSize" />
+<p [ngStyle]="{'font-size':textSize+'px'}">Text Size = {{textSize}}</p>
+<hr>
 
 <input type="checkbox" [(ngModel)]="show"> show/hide the color {{show}}
 
@@ -40,4 +44,57 @@
     <p *ngSwitchCase="6">Saturday</p>
     <p *ngSwitchCase="7">Sunday</p>
     <p *ngSwitchDefault>Invalid day</p>
+</div>
+
+<div>
+  <h2>Employee Details</h2>
+  <h5>{{emp}}</h5>
+  <pre>
+    Id:                 : {{emp.id}}
+
+    Name:               : {{emp.name}}
+    Name:               : {{emp.name | uppercase}}
+    Name:               : {{emp.name | lowercase}}
+    Name:               : {{emp.name | titlecase}}
+
+    Salary:             : {{emp.salary}}
+    salary:             : {{emp.salary | number}}
+    salary:             : {{emp.salary | number:'9.1-2'}}
+    salary:             : {{emp.salary | currency}}
+    salary:             : {{emp.salary | currency:'INR'}}
+
+    variable            :{{emp.variable}}
+    variable            :{{emp.variable | percent}}
+
+
+    Address:            : {{emp.address}}
+    City                :  {{emp.address.city}}
+    State               :  {{emp.address.state}}
+    Country             :  {{emp.address.country}}
+
+    Mobile Number:      : {{emp.mobile}}
+    Mobile Number:      : XXXXXXX{{emp.mobile | slice:7:10  }}
+
+    PAN Number:        : {{emp.panNumber}}
+    PAN Number:        : {{emp.panNumber | slice:0:2}}XXXXXX{{emp.panNumber | slice:8:10}}
+
+    Gender             : {{emp.gender | gender }}
+    DOJ                : {{emp.doj}}
+    DOJ(date)          : {{emp.doj | date}}
+    DOJ(short)         : {{emp.doj | date:'short'}}
+    DOJ(meduim)        : {{emp.doj | date:'medium'}}
+    DOJ(long)          : {{emp.doj | date:'long'}}
+    DOJ(full)          : {{emp.doj | date:'full'}}
+    DOJ(custom)        : {{emp.doj | date:'dd/MM/yyyy'}}
+    DOJ(custom)        : {{emp.doj | date:'dd/MM/yyyy HH:mm:ss'}}
+    DOJ(custom)        : {{emp.doj | date:'dd-MM-yyyy HH:mm:ss ZZZZ'}}
+
+    <ol>
+        @for(kv of emp|keyvalue;track kv){
+            <li>{{kv.key}} :  @if(kv.key == 'address') { {{kv.value | json}} }@else { {{kv.value}} }</li>
+        }
+    </ol>
+   
+  </pre>
+
 </div>
