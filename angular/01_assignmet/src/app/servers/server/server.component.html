@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+      {{server.name}} Server
+    </div>
+    <div class="card-body" [style]="server.status === 'active'? 'background-color:green':'background-color:red' ">
+        <p>Id: {{server.id}}</p>
+        <p>Name: {{server.name}}</p>
+        <p>status: {{server.status}}</p>
+        <p>Temperature: {{server.temperature}}&deg; {{server.tempUnit}}</p>
+        <!-- <p>Temperature: {{server.temperature | temperature: server.tempUnit:'F'}}</p> -->
+      <a href="#" class="btn btn-primary">{{server.status === 'active'? 'Stop Server':'Start Server'}}</a>
+    </div>
+  </div>

@@ -3,11 +3,12 @@ import { HeaderComponent } from './header/header.component';
 import { SelectorComponent } from './selector/selector.component';
 import { UsersComponent } from "./users/users.component";
 import { ButtonBannerComponent } from "./button-banner/button-banner.component";
+import { ServersComponent } from "./servers/servers.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, SelectorComponent, UsersComponent, ButtonBannerComponent],
+  imports: [HeaderComponent, SelectorComponent, UsersComponent, ButtonBannerComponent, ServersComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
