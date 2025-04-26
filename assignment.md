@@ -59,3 +59,27 @@ Button
       you are eligible for platinum button
 
 ```
+
+
+# 03:
+```
+app-componenet
+  servers = [
+   {id:1, name:'Db-Server', staus='UP', temp:'42', tempUnit:'c'},
+   {id:1, name:'Db-Server', staus='UP', temp:'42', tempUnit:'c'},
+  ]
+
+Servers component
+  <app-server> call in a loop
+
+server Componenent
+  Name: 'Db-Server'
+  status: UP (upper case)
+  temp: 42 C    {{temp}} {{tempUnit}}
+  temp: 107.2 Fbb  {{temp | temp:'C':'F' }}
+
+     status up, backgrond color= green
+     status down:background colder = red
+
+     display warning alert message, when temp > 58 C
+```
