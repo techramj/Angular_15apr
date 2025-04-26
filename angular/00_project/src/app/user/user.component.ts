@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { User } from '../user.model';
 
 @Component({
   selector: 'app-user',
@@ -8,8 +9,15 @@ import { Component } from '@angular/core';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
+  @Input() user!:User;
+  @Output() selectUser = new EventEmitter<User>();
 
-    name: string = 'Banner';
-    id: string = 'u1';
-    avatar: string = 'hulk.jpeg';
+  get imagePath(){
+    return "images/users/"+this.user.avatar;
+  }
+
+  onSelect(){
+    //emit event to parent component, send user object or user name or user id
+     this.selectUser.emit(this.user);
+  }
 }
