@@ -1,1 +1,24 @@
-<h3>{{name}}'s Task</h3>
+@if(isAddingTask){
+    <app-new-task (cancel)="onCancel()" (addTask)="addTask($event)"></app-new-task>
+}
+
+<section id="tasks">
+    <header>
+        <h2>{{name}}'s Tasks</h2>
+        <menu>
+            <button (click)="onStartAddingTask()">Add Tasks</button>
+        </menu>
+    </header>
+
+    <ul>
+        @for(item of selectedTasks;track item.id){
+            <li>
+                <app-task [task]="item"  (completeTask)="onCompleteTask($event)"></app-task>
+            </li>
+        }
+        
+    </ul>
+    
+    
+</section>
+
