@@ -40,7 +40,7 @@ export class TasksComponent {
   }
 
   addTask(task:{enteredTitle:string,enteredSummary:string,enteredDate:string}){
-    this.tasks.unshift({
+  this.tasks.unshift  ({
       id: Math.random().toString(),
       title: task.enteredTitle,
       summary: task.enteredSummary,

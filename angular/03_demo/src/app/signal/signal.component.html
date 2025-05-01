@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header">
+      Signal Component
+    </div>
+    <div class="card-body">
+      <!-- <h5 class="card-title">Special title treatment</h5> -->
+      <p class="card-text">name:{{name()}}</p>
+      <p class="card-text">age: {{age()}}</p>
+      <p class="card-text">{{x()}} + {{y()}} = {{total()}}</p>
+
+      <hr>
+      Two way Binding: <input type="text" [(ngModel)]="message" placeholder="Enter Message">
+      {{message()}}
+      <hr>
+
+      <hr>
+      One way Binding: <input type="text" [value]="name()" placeholder="Enter Message"> {{name()}}
+      <hr>
+
+      <button (click)="increment()">Increment</button>
+      <button (click)="resetMessage()">Reset Message</button>
+     
+    </div>
+  </div>
