@@ -1,0 +1,16 @@
+
+
+<div class="card" style="width: 40rem;">
+    <div class="card-header">
+        <h3>Lifecycle Demo Component</h3>
+        <h5>cnt = {{cnt}}</h5>
+      </div>
+    <div class="card-body">
+        @if(showComponent){
+            <app-lifecycle  [count]="cnt"  [message]="'Welcome...'" />
+        }
+        <br>
+        <button class="btn btn-primary" (click)="hideAndUnhide()">Hide/Unhide</button>
+        <button class="btn btn-danger" (click)="increment()">Increment</button>
+    </div>
+  </div>

@@ -26,3 +26,16 @@ let arr3:Array<number> = [1,2,3];
 let arr4:Array<string | number> = [1,2,3,'4','5'];
 ```
 
+## service
+```
+In angular, a service is a class that groups and shares the data, functions, business logic b/w the component.
+communicate between components or API
+
+```
+
+
+## when to use the services
+```
+where common logic such as fetching data, validation, logging
+
+```
