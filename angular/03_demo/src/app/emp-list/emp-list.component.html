@@ -1,0 +1,5 @@
+@for(item of empList; track item.id){
+    @if(item.id === id){
+        <app-emp [emp]="item"></app-emp>
+    } 
+}

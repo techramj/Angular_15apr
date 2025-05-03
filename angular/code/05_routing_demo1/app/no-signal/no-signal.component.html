@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-header">
+      No Signal Component
+    </div>
+    <div class="card-body">
+      <!-- <h5 class="card-title">Special title treatment</h5> -->
+      <p class="card-text">name:{{name}}</p>
+      <p class="card-text">age: {{age}}</p>
+      <p class="card-text">{{x}} + {{y}} = {{total}}</p>
+
+      <hr>
+      <input type="text" [(ngModel)]="message" placeholder="Enter Message">
+      {{message}}
+      <hr>
+
+      <button (click)="increment()">Increment</button>
+     
+    </div>
+  </div>

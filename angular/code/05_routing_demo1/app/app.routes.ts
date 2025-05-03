@@ -5,7 +5,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { SignalComponent } from './signal/signal.component';
 import { NoSignalComponent } from './no-signal/no-signal.component';
 import { EmpListComponent } from './emp-list/emp-list.component';
-import { NoEmpComponent } from './emp-list/no-emp/no-emp.component';
 
 export const routes: Routes = [
     {path:'lifecycle', component:LifecycleComponent},
@@ -14,7 +13,6 @@ export const routes: Routes = [
     {path:'binding-without-signal', component: NoSignalComponent},
     {path:'emp-list', component:EmpListComponent},
     {path:'emp-list/:id', component:EmpListComponent},
-    {path:'invalid-employee', component:NoEmpComponent},
     //{path:'', redirectTo:'lifecycle', pathMatch:'full'}, //default route
     {path:'', component:LifecycleComponent, pathMatch:'full'}, //default route
     {path:'**', component: PageNotFoundComponent} //last route
