@@ -3,8 +3,8 @@ import { Task } from '../../dummy_tasks';
 
 @Component({
   selector: 'app-task',
-  //standalone: true,
-  //imports: [],
+  standalone: true,
+  imports: [],
   templateUrl: './task.component.html',
   styleUrl: './task.component.css'
 })
