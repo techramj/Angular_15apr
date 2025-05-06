@@ -83,3 +83,34 @@ server Componenent
 
      display warning alert message, when temp > 58 C
 ```
+
+# 04. Services
+create the two services
+LogService
+DataService
+
+with the help of Dataservice share the data accross two component.
+            ButtonBannerComponent
+
+ButtonComponent              BannerComponent
+
+# 05. Routing
+entry of all the example in the routes and mapped with the link
+
+Two component
+Employees
+   display the list of employees 
+   id    name  salary   action
+   1     Jack   5000     <button>Delete</Delete>  <button>Edit</button>
+    
+on click of edit 
+url: employees/1  => EmployeeEdit component
+<form>
+   id <input>
+   Name
+   salary
+   <button>Update</button>
+</form>
+     
+
+
