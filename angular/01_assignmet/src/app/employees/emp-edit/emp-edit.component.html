@@ -1,0 +1,31 @@
+<form>
+      <div class="mb-3 row">
+        <label for="Name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="name" [(ngModel)]="emp.name"  >
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="salary" class="col-sm-2 col-form-label">salary</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" name="salary"  [(ngModel)]="emp.salary"  >
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" name="email" [(ngModel)]="emp.email"   >
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        
+        <div class="col-sm-10">
+          <button class="btn btn-primary" (click)="updateEmp()">Update Employees</button>
+        </div>
+      </div>
+
+      
+</form>

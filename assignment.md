@@ -115,3 +115,7 @@ url: employees/1  => EmployeeEdit component
      
 ```
 
+/button-banner/button/banner
+"'button-banner'+'/'+'button'+'/'+'banner'"
+"['button-banner', 'button','banner']"
+
