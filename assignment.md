@@ -98,6 +98,7 @@ ButtonComponent              BannerComponent
 entry of all the example in the routes and mapped with the link
 
 Two component
+```
 Employees
    display the list of employees 
    id    name  salary   action
@@ -112,5 +113,5 @@ url: employees/1  => EmployeeEdit component
    <button>Update</button>
 </form>
      
-
+```
 
