@@ -120,10 +120,11 @@ value= cssProperties value(eg; 'red','center')
 1. create the folder db
 2. initalize the project as a node js project
 ```
+cd db
 npm init -y
 ```
 
-3. add the json file emp.json and user.json
+3. add the json file =>  emp.json and user.json
 
 emp.json
 ```
@@ -155,3 +156,107 @@ user.json
 ```
 npm install -g json-server
 ```
+
+5. replace the below  in package.json
+```
+{
+  "name": "db",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx json-server --watch emp.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+```
+6. start the server
+```
+npm start
+```
+OR
+```
+npx json-server --watch emp.json
+```
+
+7. install thunderbird in visual studio code
+
+8. we can perform crud operation using rest api
+```
+1XX  informational
+2XX  sucess
+    200 OK
+    201 created
+    204 no content
+3XX redirection
+4XX client error
+    400 bad request
+    401 unauthorized
+    403 forbidden
+    404 page not found
+5XX  server side error
+    500 internal server error
+    503: service unavailable
+    504: geteway timeout
+
+
+    client  -------request----------->  server
+          <---------response---------            
+```
+
+### HTTP method
+1. GET   IDOMPOTENT
+2. POST
+3. PUT
+4. DELETE
+
+5. OPTIONS
+6. TRACE
+7. PATCH
+
+#### request for emp
+1. fetch all the records
+```
+GET http://localhost:3000/employees
+```
+
+3. fetch emp details by id
+```
+GET http://localhost:3000/employees/:id
+GET http://localhost:3000/employees/{id}
+```
+
+3. add the empl
+```
+POST: http://localhost:3000/employees
+
+body:
+{
+  "id": "string",
+  "name": "string",
+  "salary": number,
+  "email": "string"
+}
+
+```
+
+4. update emp
+```
+PUT: http://localhost:3000/employees/:id
+
+body:
+{
+  "id": "string",
+  "name": "string",
+  "salary": number,
+  "email": "string"
+}
+
+```
+
+5. delete emp
+DELETE: http://localhost:3000/employees/:id
