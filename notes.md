@@ -90,3 +90,19 @@ export class AppModule{
 export class AppComponent {
 }
 ```
+
+3. add below changes in main.ts
+```
+//bootstrapApplication(AppComponent, appConfig) .catch((err) => console.error(err));
+platformBrowserDynamic().bootstrapModule(AppModule);
+```
+
+
+```
+
+services1
+services2
+services2
+
+
+```

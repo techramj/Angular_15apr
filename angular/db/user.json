@@ -1,0 +1,9 @@
+{
+    "users" : [
+        {"id":101, "name":"John", "age":21, "email":"test1@gmail.com"},
+        {"id":102, "name":"Sam", "age":22, "email":"test2@gmail.com"},
+        {"id": 103, "name":"Jessica", "age":20, "email":"test3@gmail.com"},
+        {"id": 104, "name":"Vijay", "age":19, "email":"test4@gmail.com"},
+        {"id": 105, "name":"Ajay", "age":32, "email":"test5@gmail.com"}
+    ]
+}

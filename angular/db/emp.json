@@ -1,0 +1,9 @@
+{
+    "employees" : [
+        {"id":1, "name":"John", "salary":5000, "email":"test1@gmail.com"},
+        {"id":2, "name":"Sam", "salary":6000, "email":"test2@gmail.com"},
+        {"id":3, "name":"Jessica", "salary":15000, "email":"test3@gmail.com"},
+        {"id":4, "name":"Vijay", "salary":45000, "email":"test4@gmail.com"},
+        {"id":5, "name":"Ajay", "salary":35000, "email":"test5@gmail.com"}
+    ]
+}
