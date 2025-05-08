@@ -6,6 +6,12 @@ import { SignalComponent } from './signal/signal.component';
 import { NoSignalComponent } from './no-signal/no-signal.component';
 import { EmpListComponent } from './emp-list/emp-list.component';
 import { NoEmpComponent } from './emp-list/no-emp/no-emp.component';
+import { ObservableExample1Component } from './observers/observable-example1/observable-example1.component';
+import { ObservableExample2Component } from './observers/observable-example2/observable-example2.component';
+import { ObservableExample3Component } from './observers/observable-example3/observable-example3.component';
+import { ObservableExample4Component } from './observers/observable-example4/observable-example4.component';
+import { ObservableExample5Component } from './observers/observable-example5/observable-example5.component';
+import { PromiseComponent } from './promise/promise.component';
 
 export const routes: Routes = [
     {path:'lifecycle', component:LifecycleComponent},
@@ -15,6 +21,12 @@ export const routes: Routes = [
     {path:'emp-list', component:EmpListComponent},
     {path:'emp-list/:id', component:EmpListComponent},
     {path:'invalid-employee', component:NoEmpComponent},
+    {path:'observable1', component: ObservableExample1Component},
+    {path:'observable2', component: ObservableExample2Component},
+    {path:'observable3', component: ObservableExample3Component},
+    {path:'observable4', component: ObservableExample4Component},
+    {path:'observable5', component: ObservableExample5Component},
+    {path:'promise', component:PromiseComponent},
     //{path:'', redirectTo:'lifecycle', pathMatch:'full'}, //default route
     {path:'', component:LifecycleComponent, pathMatch:'full'}, //default route
     {path:'**', component: PageNotFoundComponent} //last route
