@@ -260,3 +260,66 @@ body:
 
 5. delete emp
 DELETE: http://localhost:3000/employees/:id
+
+
+
+# observables
+```
+Observable are a core feature of programming that handle asynschornous operations and data stream.
+
+synchronous vs asynchronous
+
+fun1() 1 min
+fun2() 1 min
+fun3() 1 min
+
+```
+
+### how can we write asynchronous task
+```
+Promise
+Observable
+```
+
+
+#### observable design patter
+```
+
+Observable                     Observer                     Handler
+
+Even Emitter                  Event Listener                EventHandler
+                                subcriber()
+
+
+next                               .subscribe()              .next() 
+error                                                         .error()
+completion                                                     .complete()
+
+```
+
+1. create observable
+```
+observable1  = new Observable(); //not emit any data
+
+```
+
+2. pass the callback function as an observer
+```
+observable1  = new Observable((observer)=>{
+    observer.next('data.....');
+}); 
+
+```
+
+3. observer
+```
+observable1.subscribe((data)=>{});
+
+```
+
+
+
+````
+
+ 1   2    3   4
+```

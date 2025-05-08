@@ -12,6 +12,7 @@ import { ObservableExample3Component } from './observers/observable-example3/obs
 import { ObservableExample4Component } from './observers/observable-example4/observable-example4.component';
 import { ObservableExample5Component } from './observers/observable-example5/observable-example5.component';
 import { PromiseComponent } from './promise/promise.component';
+import { ObservableExample6Component } from './observers/observable-example6/observable-example6.component';
 
 export const routes: Routes = [
     {path:'lifecycle', component:LifecycleComponent},
@@ -26,6 +27,7 @@ export const routes: Routes = [
     {path:'observable3', component: ObservableExample3Component},
     {path:'observable4', component: ObservableExample4Component},
     {path:'observable5', component: ObservableExample5Component},
+    {path:'observable6', component: ObservableExample6Component},
     {path:'promise', component:PromiseComponent},
     //{path:'', redirectTo:'lifecycle', pathMatch:'full'}, //default route
     {path:'', component:LifecycleComponent, pathMatch:'full'}, //default route
