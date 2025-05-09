@@ -1,15 +1,9 @@
 {
   "employees": [
     {
-      "id": "1",
-      "name": "John",
-      "salary": 90000,
-      "email": "john@gmail.com"
-    },
-    {
       "id": "2",
       "name": "Sam",
-      "salary": 6000,
+      "salary": 9000,
       "email": "test2@gmail.com"
     },
     {
@@ -19,22 +13,10 @@
       "email": "test3@gmail.com"
     },
     {
-      "id": "4",
-      "name": "Vijay",
-      "salary": 45000,
-      "email": "test4@gmail.com"
-    },
-    {
-      "id": "5",
-      "name": "Ajay",
-      "salary": 35000,
-      "email": "test5@gmail.com"
-    },
-    {
-      "id": "1244",
-      "name": "Sushil",
-      "salary": 90000,
-      "email": "Sushil@gmail.com"
+      "id": "fd5d",
+      "name": "Johny",
+      "salary": 9999,
+      "email": "abc@test.com"
     }
   ]
 }

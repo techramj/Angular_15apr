@@ -13,6 +13,9 @@ import { ObservableExample4Component } from './observers/observable-example4/obs
 import { ObservableExample5Component } from './observers/observable-example5/observable-example5.component';
 import { PromiseComponent } from './promise/promise.component';
 import { ObservableExample6Component } from './observers/observable-example6/observable-example6.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { EmpEditComponent } from './employees/emp-edit/emp-edit.component';
+import { EmpCreateComponent } from './employees/emp-create/emp-create.component';
 
 export const routes: Routes = [
     {path:'lifecycle', component:LifecycleComponent},
@@ -28,8 +31,11 @@ export const routes: Routes = [
     {path:'observable4', component: ObservableExample4Component},
     {path:'observable5', component: ObservableExample5Component},
     {path:'observable6', component: ObservableExample6Component},
+    {path:'employees', component: EmployeesComponent},
+    {path:'employees/:id/edit', component: EmpEditComponent},
+    {path:'emp-create', component:EmpCreateComponent},
     {path:'promise', component:PromiseComponent},
     //{path:'', redirectTo:'lifecycle', pathMatch:'full'}, //default route
-    {path:'', component:LifecycleComponent, pathMatch:'full'}, //default route
+    {path:'', component:EmployeesComponent, pathMatch:'full'}, //default route
     {path:'**', component: PageNotFoundComponent} //last route
   ];
