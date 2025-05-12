@@ -16,6 +16,11 @@ import { ObservableExample6Component } from './observers/observable-example6/obs
 import { EmployeesComponent } from './employees/employees.component';
 import { EmpEditComponent } from './employees/emp-edit/emp-edit.component';
 import { EmpCreateComponent } from './employees/emp-create/emp-create.component';
+import { Demo1Component } from './forms/demo1/demo1.component';
+import { Demo2Component } from './forms/demo2/demo2.component';
+import { Demo3Component } from './forms/demo3/demo3.component';
+import { Demo4Component } from './forms/demo4/demo4.component';
+import { Demo5Component } from './forms/demo5/demo5.component';
 
 export const routes: Routes = [
     {path:'lifecycle', component:LifecycleComponent},
@@ -35,6 +40,11 @@ export const routes: Routes = [
     {path:'employees/:id/edit', component: EmpEditComponent},
     {path:'emp-create', component:EmpCreateComponent},
     {path:'promise', component:PromiseComponent},
+    {path:'form1', component: Demo1Component},
+    {path:'form2', component: Demo2Component},
+    {path:'form3', component: Demo3Component},
+    {path:'form4', component: Demo4Component},
+    {path:'form5', component: Demo5Component},
     //{path:'', redirectTo:'lifecycle', pathMatch:'full'}, //default route
     {path:'', component:EmployeesComponent, pathMatch:'full'}, //default route
     {path:'**', component: PageNotFoundComponent} //last route
